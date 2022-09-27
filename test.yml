@@ -1,0 +1,9 @@
+- hosts: Web_ASG
+  become: true
+  
+  tasks:
+    - name: stop nginx
+      service: 
+        name: nginx
+        state: stopped
+
